@@ -11,6 +11,20 @@
   text-align: center;
 }
 
+h1{
+  font-weight: 900;
+
+}
+
+h2{
+  font-weight: 600;
+
+}
+
+p{
+  font-weight: 200;
+
+}
  
 
   .img-style{
@@ -28,6 +42,7 @@ height: 100%;
 .about-me-text{
   grid-column: 3/6;
   grid-row:;
+  
 }
 
 
@@ -52,24 +67,35 @@ height: 100%;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
     background: pink;
+    background-image: url(../img/hero-img.jpg);
+    height: 500px;
     background-repeat: no-repeat;
     width: 100%;
-    background-size:contain;
+    background-size:cover;
     grid-column: 1/12;
-    grid-row: 2/4;
-    position: relative;
+    grid-row: 2/5;
+    background-position: center;
   }
 
   .hero-text{
       grid-column: 3/5;
       grid-row: 2/4 ;
       text-align: center;
-      font-size: xx-large;
+      font-size:5ch;
+      padding-top: 40px;;
+      font-family: 'Prompt';
+    font-weight: 900;
+    color: white;
   }
 
 .about-me-text{
   grid-column: 8/12;
   grid-row: 5/6;
+  text-align: justify;
+  padding-top: 200px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
 }
 
 
@@ -103,3 +129,27 @@ a{ color: black;
 a:hover { 
     color: pink;
   }
+
+
+
+  @media (min-width: 1200px)
+.container {
+    max-width: 1900px;
+}
+@media (min-width: 992px)
+.container {
+    max-width: 960px;
+}
+
+@media (min-width: 768px)
+.container {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container {
+    max-width: 540px;}
+
+
+
+
+

@@ -43,6 +43,9 @@ h3 {
   margin-top: 1rem;
   margin-bottom: 0;
 }
+
+
+
 [class*="col-"] {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -72,16 +75,27 @@ hr {
 
 @media (min-width: 1200px)
 .container {
-    max-width: 1900px;
+    max-width: 1300px;
 }
 @media (min-width: 992px)
 .container {
     max-width: 960px;
 }
+
 @media (min-width: 768px)
 .container {
     max-width: 720px;
 }
-@media (min-width: 576px)
+
+
+@media (max-width: 576px)
 .container {
-    max-width: 540px;
+    max-width: 540px;}
+
+.portfolio-grid{
+      grid-template-columns: repeat(1, 1fr);}
+
+.about-me{
+  grid-template-columns: repeat(1, 1fr);
+    }
+
