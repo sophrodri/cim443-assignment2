@@ -56,7 +56,8 @@ h3 {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
- max-width: 100%;}
+ max-width: 100%;
+}
 
 .portfolio-grid{
   grid-column: 1/12;
@@ -73,22 +74,42 @@ hr {
   margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .portfolio-grid{
+    grid-template-columns: repeat(1, 1fr);}
+
+  .row{
+    grid-template-columns: repeat(1, 1fr);}
+  }  
+}
+
+
+
+/* 
 @media (min-width: 1200px)
 .container {
     max-width: 1300px;
 }
+.portfolio-grid{
+  grid-template-columns: repeat(2, 1fr);}
+
 @media (min-width: 992px)
 .container {
     max-width: 960px;
 }
+.portfolio-grid{
+  grid-template-columns: repeat(2, 1fr);}
 
 @media (min-width: 768px)
 .container {
     max-width: 720px;
 }
+.portfolio-grid{
+  grid-template-columns: repeat(2, 1fr);}
 
 
-@media (max-width: 576px)
+
+@media (min-width: 576px)
 .container {
     max-width: 540px;}
 
@@ -98,4 +119,4 @@ hr {
 .about-me{
   grid-template-columns: repeat(1, 1fr);
     }
-
+ */
