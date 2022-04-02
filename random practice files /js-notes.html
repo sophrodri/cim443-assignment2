@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript exercises</title>
+    <script
+      src="https://kit.fontawesome.com/92123ffbf2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="js-css.css"/>
+    <script src="js-notes.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper colorWrapper">
+      <section class="site-container">
+        <h2>What can we do with JavaScript?</h2>
+        <div class="buttons">
+          <div>
+            <button><span>Open the sidebar</span></button>
+          </div>
+          <button class="button jsModalButton">Click me!</button>
+          <button class="changeColor">I'm bored of white :(</button>
+        </div>
+      </section>
+      <!-- Slide Panel  -->
+      <div class="offsite-container">
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Modal  -->
+      <div class="modal-overlay jsModalOverlay">
+        <div class="modal">
+          <div class="modal__content">
+            <h2>This is a modal</h2>
+            <p>I can hold any kind of content</p>
+            <button class="modal__close-button jsModalClose">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- End Hidden elements -->
+    </div>
+  </body>
+</html>
+
+
