@@ -11,9 +11,144 @@
   text-align: center;
 }
 
+.nav{
+  list-style: none;
+  margin: -20px;
+}
+
+
+#header{
+  margin: 2rem;
+}
+
 .container{
   background-color: #e0e0e0;
 }
+
+
+#modalButton{
+  position: absolute;
+  right: 40px;
+  top: 15px;
+}
+
+ button {
+  border: 2px solid BLACK;
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+button:hover,
+button:focus,
+.offsite-is-open button {
+  background-color: black;
+  color: WHITE;
+  border-color: #031129;
+} 
+
+/* ===================== MODAL =======================  */
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+body.modal-is-open .modal-overlay {
+  opacity: 1;
+  z-index: 1;
+}
+
+.modal {
+  display: grid;
+  place-items: center;
+  position: relative;
+  border-radius: 10px;
+  background-color: #efefef;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.15);
+  color: #333;
+  min-width: 70vmin;
+  min-height: 70vmin;
+  padding: 2.5rem;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: -1em;
+  right: -1em;
+  padding: 0.5rem;
+  font-size: 1.5em;
+  border-radius: 50%;
+  border: 2px solid var(--r-heading-color);
+  background: white;
+  color: var(--r-heading-color);
+  opacity: 1;
+}
+
+
+.modal__close-button button:hover,
+.modal__close-button:active,
+.modal__close-button:focus {
+  background: white;
+  border-color: var(--r-heading-color);
+}
+
+/* ==================== RANDOM COLORS ====================== */
+.colorWrapper {
+  height: 100vh;
+  width: 100% !important;
+  position: absolute important;
+  /* top: 0 important;
+    left: 0 important; */
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.buttonColor {
+  width: 10rem;
+  height: 5rem;
+  display: block;
+  border: none;
+  color: BLUE;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+}
+
+.clicked{
+  background-color: black;
+  color: white;
+}
+
+.button-style{
+  background-color: lavender;
+  color: black;
+  border: none;
+}
+
+#nav-button{
+  position: sticky;
+  top: 10;
+  bottom:90%;
+
+}
+
+.hero-button{
+  position: sticky;
+  top: 60%;
+  left:40%;
+}
+
+
 
 .img-container {
   position: relative;
@@ -32,7 +167,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 90%;
+  height: 94%;
   width: 95%;
   opacity: 0;
   transition: .5s ease;
@@ -45,19 +180,34 @@
 
 .text {
   color: black;
-  font-size: 20px;
+  font-size: 50px;
   position: absolute;
   top: 50%;
+  bottom: 50%;
   left: 50%;
+  right: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+ 
 }
 
+#skillsColor{
+  position: absolute;
+  left: 20px;
+}
 
+.skills-button{
+  position: absolute;
+  left: 50px;
+}
 
+   .offsite-container{ 
+    position: absolute; 
+    transition: transform 0.3s ease-out; 
+  }
 
+    
 p{
   font-weight: 500;
 }
@@ -73,11 +223,11 @@ h2{
 }
 
 
- 
 
   .img-style{
 height: 100%;
   width: 100%;
+  background-size: cover;
   display: inline-flex;
 }
 
@@ -93,33 +243,25 @@ height: 100%;
   
 }
 
+#site-logo{
+position: absolute;
+left: 45%;
+top: 0;
+z-index: 100;
+}
 
-
-
-  .logo-home {
-    grid-column: 1/3;
-    grid-row: 1/1;
-  }
-
-  .logo{
+  .logo-styles{
     width: 10em;
   }
 
-  .menu-nav {
-    grid-column: 4/ 12;
-    grid-row: 1/1;
-  }
 
-  .nav{
-    padding-top: 20px;
-  }
 
   .hero {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
     background: pink;
-    background-image: url(../img/hero-img.jpg);
+    /* background-image: url(../img/hero-img.jpg); */
     height: 500px;
     background-repeat: no-repeat;
     width: 100%;
@@ -139,6 +281,24 @@ height: 100%;
     font-weight: 900;
     color: white;
   }
+
+
+#contactMe{
+background-color: yellow;
+position: sticky;
+
+}
+
+.contact-styles{
+  grid-row: 11/12;
+  grid-column: 1/12;
+  padding: 73px;
+}
+
+.contact-styles p {
+text-align: center;
+margin-top: 30px;;
+}
 
 .about-me-text{
   grid-column: 8/12;

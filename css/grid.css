@@ -14,12 +14,10 @@
 
 .container{ 
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+ padding: 72px;
   grid-column: 1/12;
   grid-row: 7/9;
+background-size: cover;
 }
 
 body {
@@ -74,6 +72,8 @@ hr {
   margin-bottom: 2rem;
 }
 
+
+
 @media only screen and (max-width: 600px) {
   .portfolio-grid{
     grid-template-columns: repeat(1, 1fr);}
@@ -84,11 +84,13 @@ hr {
 }
 
 
-
-/* 
 @media (min-width: 1200px)
 .container {
     max-width: 1300px;
+
+
+/* 
+
 }
 .portfolio-grid{
   grid-template-columns: repeat(2, 1fr);}
