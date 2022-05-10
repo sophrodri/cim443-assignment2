@@ -8,12 +8,10 @@
   }
   
 .section-titles{
-  text-align: center;
+  text-align: left;
 }
 
-.container{
-  background-color: #e0e0e0;
-}
+
 
 .img-container {
   position: relative;
@@ -36,7 +34,7 @@
   width: 95%;
   opacity: 0;
   transition: .5s ease;
-  background-color: pink;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 .img-container:hover .overlay {
@@ -72,28 +70,22 @@ h2{
 
 }
 
-
- 
-
   .img-style{
 height: 100%;
   width: 100%;
   display: inline-flex;
 }
 
+#about{
+  background-color: #eeaeca;
+}
+
+
 .about-me{
   display: grid;
   grid-template-columns: repeat(6, minmax(0, auto));
   grid-template-rows: repeat(6, minmax(0, auto));
 }
-
-.about-me-text{
-  grid-column: 3/6;
-  grid-row:;
-  
-}
-
-
 
 
   .logo-home {
@@ -102,7 +94,7 @@ height: 100%;
   }
 
   .logo{
-    width: 10em;
+    width: 15em;
   }
 
   .menu-nav {
@@ -111,19 +103,20 @@ height: 100%;
   }
 
   .nav{
-    padding-top: 20px;
+    padding-top: 7%;
+  }
+
+  a{
+    color:black
   }
 
   .hero {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    background: pink;
-    background-image: url(../img/hero-img.jpg);
-    height: 500px;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size:cover;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    height: 25em;
     grid-column: 1/12;
     grid-row: 2/5;
     background-position: center;
@@ -144,10 +137,9 @@ height: 100%;
   grid-column: 8/12;
   grid-row: 5/6;
   text-align: justify;
-  padding-top: 200px;
-  padding-right: 100px;
-  padding-bottom: 100px;
-  padding-left: 100px;
+  padding-top: 25%;
+  padding-right: 25%;
+  color: white;
 }
 
 
@@ -158,7 +150,7 @@ height: 100%;
   .footer {
     position: sticky;
     padding: 60px;
-    background-color: pink;
+    background-color: black;
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: repeat(1, 1fr);
@@ -188,22 +180,29 @@ a:hover {
 
 
 
-  @media (min-width: 1200px)
+  @media (min-width: 1200px){
 .container {
     max-width: 1900px;
 }
-@media (min-width: 992px)
+}
+
+
+@media (min-width: 992px){
 .container {
     max-width: 960px;
 }
+}
 
-@media (min-width: 768px)
-.container {
+@media (min-width: 768px){
+  .container {
     max-width: 720px;
 }
-@media (min-width: 576px)
-.container {
+}
+
+@media (min-width: 576px){
+  .container {
     max-width: 540px;}
+}
 
 
 

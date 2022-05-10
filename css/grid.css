@@ -18,7 +18,7 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  grid-column: 1/12;
+  grid-column: 1/11;
   grid-row: 7/9;
 }
 
@@ -57,6 +57,7 @@ h3 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
  max-width: 100%;
+ padding-left: 5%;
 }
 
 .portfolio-grid{
