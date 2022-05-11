@@ -29,6 +29,11 @@
 <!-- JS file -->
 <script src="js/javascript.js" defer></script>
 
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+
 
 </head>
 
@@ -57,11 +62,11 @@
 
 <!-- Hero  -->
           <div class="hero colorWrapper">
-            <h1 id="ReplaceMe" class="hero-text"> Welcome</h1>
+            <h1 class="hero-text" id="changeSize"> Welcome</h1>
   
 <!-- Hero Button - Change Color -->
-
-            <button class="hero-button button-style buttonColor changeColor clicked" id="bg">For Fun</button>
+<div class="colorDiv"></div>
+<button class="hero-button button-style buttonColor">Click for Pink</button>
          </div>
       
 
@@ -106,9 +111,13 @@
             <div class="col-6">
                 <div class="about-me-text">
                     <h1>I'm Sophia</h1>
-                    <p>I'm a graduating senior from the University of Miami, studying Advertising. Just like those movie makeovers, I love making brands feel put together the moment they step onto the scene. </p>
-                    <button id="ChangeColor" class="skills-button"> Change The Color</button>
-                </div>
+                    <p id="ReplaceMe">I'm a graduating senior from the University of Miami, studying Advertising. Just like those movie makeovers, I love making brands feel put together the moment they step onto the scene. </p>
+    
+                   <div id="emptyPG">
+
+                   </div>
+                
+                  </div>
 
 
             </div>
@@ -119,7 +128,7 @@
           <div class="container" id="Specialties">
 
             <!-- Three columns of text below the carousel -->
-            <h1 class="section-titles">Specialties</h1>
+            <h1 class="section-titles" id="SectionClass">Specialties</h1>
             <div class="row">
            
               <div class="col-lg-4">
@@ -181,7 +190,7 @@
     </div>
    
     <div class="form-group">
-      <label for="exampleFormControlTextarea1">Example textarea</label>
+      <label for="exampleFormControlTextarea1">Send the Message</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
 
@@ -224,8 +233,11 @@
 
 <!-- Footer -->
         <div class="footer">
-
-
+          <div class="footer-text">
+            <p id="jqPrepend">Page made in Spring 2022.</p>
+          </div>
+         
+          <div id="map"></div>
         </div>
 
        
