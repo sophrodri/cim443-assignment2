@@ -90,6 +90,7 @@ colorWrapper {
   position: absolute;
 }
 
+
 .clicked{
   background: #eeaeca;
 }
@@ -313,8 +314,10 @@ height: 100%;
 }
 
 #map { 
-  height: 50px; 
-width: 100px;}
+height: 300px; 
+width: 300px;
+margin-bottom: 20px;
+}
 
 
 

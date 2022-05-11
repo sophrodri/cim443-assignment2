@@ -69,7 +69,7 @@ colorDiv.addEventListener('click', function () {
 
 
 //- Replace the HTML content on a paragraph.
-$("#ReplaceMe").html("A creative for the girls.");
+$("#ReplaceMe").html("Creating for beatiful brands.");
 
 
 // Leaflet map
